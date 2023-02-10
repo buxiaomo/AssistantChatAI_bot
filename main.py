@@ -39,7 +39,7 @@ def send_welcome(message):
         session.add(new_user)
         session.commit()
     session.close()
-    bot.reply_to(message, "这是一个基于ChatGPT的聊天机器人，目前仅支持一问一答，不支持上下文理解，现在你可以和我聊天了。")
+    bot.reply_to(message, "这是一个基于ChatGPT的聊天机器人, 目前仅支持一问一答, 不支持上下文理解\n代码地址: https://github.com/buxiaomo/AssistantChatAI_bot.git, 欢迎补充功能. \n现在你可以和我聊天了。")
 
 
 @bot.message_handler(func=lambda message: True)
